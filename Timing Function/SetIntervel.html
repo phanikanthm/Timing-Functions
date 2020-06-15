@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>SetTimeout Function</title>
+
+
+</head>
+
+<body>
+    <input onclick="statin()" type="button" value="Start">
+    <p id ="p"> Some Text</p>
+    <input onclick="cstp()" type="button" value="Stop">
+
+    <script>
+        var id=0;
+        seconds=0;
+        function printtext()
+        {
+            document.getElementById("p").innerHTML=seconds+" Second";
+            seconds++;
+            
+
+        }    
+        function statin()
+        {
+            id=window.setInterval(printtext,1000);
+        }
+        function cstp()
+        {
+            window.clearInterval(id);
+
+        }
+    
+    
+    
+    </script>
+
+
+
+</body>
+</html>

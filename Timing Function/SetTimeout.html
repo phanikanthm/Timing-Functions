@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>SetTimeout Function</title>
+
+
+</head>
+
+<body>
+    <input onclick="stat()" type="button" value="Start">
+    <p id ="p"> Some Text</p>
+    <input onclick="stp()" type="button" value="Stop">
+
+    <script>
+        var id=0;
+        function printtext()
+        {
+            document.getElementById("p").innerHTML="5 seconds on press";
+
+        }    
+        function stat()
+        {
+            id=window.setTimeout(printtext,5000);
+        }
+        function stp()
+        {
+            window.clearTimeout(id);
+
+        }
+    
+    
+    
+    </script>
+
+
+
+</body>
+</html>
